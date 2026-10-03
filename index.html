@@ -503,6 +503,7 @@ section { padding-top: clamp(3rem, 7vw, 5rem); padding-bottom: clamp(3rem, 7vw, 
 /* projects */
 .market-group { margin-bottom: 2.25rem; }
 .market-group:last-of-type { margin-bottom: 0; }
+.market-via { text-transform: none; letter-spacing: 0.01em; }
 .market-title {
   font-size: 0.78rem;
   letter-spacing: 0.08em;
@@ -808,7 +809,7 @@ div.project-row:hover { transform: none; border-color: var(--line); }
     <div class="stat-row reveal">
       <div class="stat"><b>4+</b><span data-i18n="stat.years">Years in creative &amp; digital marketing</span></div>
       <div class="stat"><b>1.5M</b><span data-i18n="stat.tiktok">TikTok views in 60 days &mdash; Khulla soft opening</span></div>
-      <div class="stat"><b>14+</b><span data-i18n="stat.projects">Brand &amp; client properties owned</span></div>
+      <div class="stat"><b>13+</b><span data-i18n="stat.projects">Brands &amp; websites delivered</span></div>
     </div>
   </header>
 
@@ -897,7 +898,7 @@ div.project-row:hover { transform: none; border-color: var(--line); }
   <section id="projects" class="section-border">
     <div class="wrap">
       <div class="kicker reveal"><span class="num">03</span><h2 data-i18n="projects.h2">Projects worked on</h2><span class="rule"></span></div>
-      <p class="lede reveal" data-i18n="projects.lede">Fourteen brand and client properties across Saudi Arabia, the UAE, Qatar and India &mdash; spanning creative direction, content strategy, SEO, web builds and ecommerce. Khulla is live right now, in its soft-opening phase.</p>
+      <p class="lede reveal" data-i18n="projects.lede">Thirteen brands and websites delivered through in-house and agency roles across Saudi Arabia, the UAE, Qatar and India &mdash; spanning creative direction, content strategy, SEO, web builds and ecommerce. Khulla is live right now, in its soft-opening phase.</p>
 
       <div class="current-project reveal">
         <div class="current-head">
@@ -1008,7 +1009,7 @@ div.project-row:hover { transform: none; border-color: var(--line); }
       </div>
 
       <div class="market-group reveal">
-        <div class="market-title" data-i18n="market.ksa">Saudi Arabia</div>
+        <div class="market-title" data-i18n="market.ksa">Saudi Arabia <span class="market-via">&middot; via Hisham Albloshi Holding Group</span></div>
         <div class="project-list">
           <a class="project-row" href="https://spice-road.com" target="_blank" rel="noopener">
             <span class="project-name">spice-road.com <span class="arrow">&#8599;</span></span>
@@ -1018,10 +1019,6 @@ div.project-row:hover { transform: none; border-color: var(--line); }
             <span class="project-name">muftahalez.com <span class="arrow">&#8599;</span></span>
             <span class="project-tags"><span class="tag-chip" data-i18n="tag.seo">SEO</span><span class="tag-chip" data-i18n="tag.web">Web</span><span class="tag-chip" data-i18n="tag.socialmedia">Social Media</span></span>
           </a>
-          <a class="project-row" href="https://almasaalswda1.com" target="_blank" rel="noopener">
-            <span class="project-name">almasaalswda1.com <span class="arrow">&#8599;</span></span>
-            <span class="project-tags"><span class="tag-chip" data-i18n="tag.ecommerce">Ecommerce</span><span class="tag-chip" data-i18n="tag.ads">Ads</span></span>
-          </a>
           <a class="project-row" href="https://habksa.com" target="_blank" rel="noopener">
             <span class="project-name">habksa.com <span class="arrow">&#8599;</span></span>
             <span class="project-tags"><span class="tag-chip" data-i18n="tag.seo">SEO</span><span class="tag-chip" data-i18n="tag.webdev">Web Development</span></span>
@@ -1030,7 +1027,7 @@ div.project-row:hover { transform: none; border-color: var(--line); }
       </div>
 
       <div class="market-group reveal">
-        <div class="market-title" data-i18n="market.uae">UAE</div>
+        <div class="market-title" data-i18n="market.uae">UAE <span class="market-via">&middot; via Falcon Konnect &amp; Pace Media</span></div>
         <div class="project-list">
           <div class="project-row">
             <span class="project-name">falcontrackers.com</span>
@@ -1052,7 +1049,7 @@ div.project-row:hover { transform: none; border-color: var(--line); }
       </div>
 
       <div class="market-group reveal">
-        <div class="market-title" data-i18n="market.qatar">Qatar</div>
+        <div class="market-title" data-i18n="market.qatar">Qatar <span class="market-via">&middot; via Delwan Qatar &amp; Falcon Konnect</span></div>
         <div class="project-list">
           <a class="project-row" href="https://delwanqatar.com" target="_blank" rel="noopener">
             <span class="project-name">delwanqatar.com <span class="arrow">&#8599;</span></span>
@@ -1074,7 +1071,7 @@ div.project-row:hover { transform: none; border-color: var(--line); }
       </div>
 
       <div class="market-group reveal">
-        <div class="market-title" data-i18n="market.india">India</div>
+        <div class="market-title" data-i18n="market.india">India <span class="market-via">&middot; via Falcon Konnect &amp; Pace Media</span></div>
         <div class="project-list">
           <a class="project-row" href="https://sju.edu.in" target="_blank" rel="noopener">
             <span class="project-name">sju.edu.in <span class="arrow">&#8599;</span></span>
@@ -1235,7 +1232,7 @@ div.project-row:hover { transform: none; border-color: var(--line); }
         ariaTiktok: `Line chart showing Khulla's TikTok views climbing over a 60-day soft opening push, from near zero to 1.5 million views`,
         ariaInstagram: `Line chart showing Khulla's Instagram views climbing over a 60-day soft opening push, from near zero to 237,000 views`
       },
-      stat: { years: `Years in creative &amp; digital marketing`, tiktok: `TikTok views in 60 days &mdash; Khulla soft opening`, projects: `Brand &amp; client properties owned` },
+      stat: { years: `Years in creative &amp; digital marketing`, tiktok: `TikTok views in 60 days &mdash; Khulla soft opening`, projects: `Brands &amp; websites delivered` },
       approach: { h2: `How the funnel gets run`, lede: `Every brand launch follows the same full-funnel path &mdash; research and infrastructure first, then creative concept and paid media, then the commerce layer that turns traffic into orders, then the report that says whether it worked.` },
       flow1: { tag: `Foundation`, h4: `Research &amp; SEO`, p: `Technical SEO, web infrastructure, keyword and competitor research across Search Console, SEMrush and Ubersuggest.` },
       flow2: { tag: `Creative`, h4: `Creative Direction`, p: `Concept, scripting and Saudi-dialect social content, short-form video and ad creative, written, shot and edited in-house.` },
@@ -1260,7 +1257,7 @@ div.project-row:hover { transform: none; border-color: var(--line); }
         subOrg: `<b>Dalex Trading LLC</b> &middot; Subsidiary &middot; Lighting &amp; electrical trading company`,
         subList: `<li>Developed and maintained websites for subsidiary companies, focusing on SEO and content.</li><li>Managed social media accounts, created content, ran email marketing campaigns, and provided IT support to the internal team.</li>`
       },
-      projects: { h2: `Projects worked on`, lede: `Fourteen brand and client properties across Saudi Arabia, the UAE, Qatar and India &mdash; spanning creative direction, content strategy, SEO, web builds and ecommerce. Khulla is live right now, in its soft-opening phase.` },
+      projects: { h2: `Projects worked on`, lede: `Thirteen brands and websites delivered through in-house and agency roles across Saudi Arabia, the UAE, Qatar and India &mdash; spanning creative direction, content strategy, SEO, web builds and ecommerce. Khulla is live right now, in its soft-opening phase.` },
       current: {
         badge: `Currently &middot; Soft Opening Phase`,
         h4: `Khulla`,
@@ -1335,7 +1332,7 @@ div.project-row:hover { transform: none; border-color: var(--line); }
         chips: `<span class="chip">Print Design</span><span class="chip">Web Development</span><span class="chip">SEO</span><span class="chip">Social Media</span><span class="chip">Email Marketing</span><span class="chip">IT Support</span>`,
         note: `Engagement ended September 2023. The sites have been run by others since, so they may have changed from what I delivered.`
       },
-      market: { ksa: `Saudi Arabia`, uae: `UAE`, qatar: `Qatar`, india: `India` },
+      market: { ksa: `Saudi Arabia <span class="market-via">&middot; via Hisham Albloshi Holding Group</span>`, uae: `UAE <span class="market-via">&middot; via Falcon Konnect &amp; Pace Media</span>`, qatar: `Qatar <span class="market-via">&middot; via Delwan Qatar &amp; Falcon Konnect</span>`, india: `India <span class="market-via">&middot; via Falcon Konnect &amp; Pace Media</span>` },
       tag: { seo: `SEO`, web: `Web`, ecommerce: `Ecommerce`, ads: `Ads`, socialmedia: `Social Media`, content: `Content`, webdev: `Web Development`, socialmediamgmt: `Social Media Management` },
       own: {
         title: `Creative Direction &middot; Own Project`,
@@ -1376,7 +1373,7 @@ div.project-row:hover { transform: none; border-color: var(--line); }
         ariaTiktok: `مخطط خطي يوضح ارتفاع مشاهدات خُلّة على تيك توك خلال 60 يومًا من الافتتاح التجريبي، من الصفر تقريبًا إلى 1.5 مليون مشاهدة`,
         ariaInstagram: `مخطط خطي يوضح ارتفاع مشاهدات خُلّة على إنستغرام خلال 60 يومًا من الافتتاح التجريبي، من الصفر تقريبًا إلى 237,000 مشاهدة`
       },
-      stat: { years: `سنوات في التسويق الإبداعي والرقمي`, tiktok: `مشاهدات تيك توك خلال 60 يومًا &mdash; الافتتاح التجريبي لخُلّة`, projects: `علامة تجارية ومشروع عميل` },
+      stat: { years: `سنوات في التسويق الإبداعي والرقمي`, tiktok: `مشاهدات تيك توك خلال 60 يومًا &mdash; الافتتاح التجريبي لخُلّة`, projects: `علامة تجارية وموقعًا إلكترونيًا منجزًا` },
       approach: { h2: `كيف يسير المسار التسويقي الكامل`, lede: `يمر كل إطلاق لعلامة تجارية بالمسار الكامل نفسه: البحث والبنية التقنية أولًا، ثم المفهوم الإبداعي والإعلانات المدفوعة، ثم طبقة المتجر الإلكتروني التي تحوّل الزيارات إلى طلبات، وأخيرًا التقرير الذي يوضح ما إذا كانت الخطة قد نجحت.` },
       flow1: { tag: `الأساس`, h4: `البحث وتحسين محركات البحث`, p: `تحسين تقني لمحركات البحث، وبنية تقنية للمواقع، وبحث في الكلمات المفتاحية والمنافسين عبر Search Console وSEMrush وUbersuggest.` },
       flow2: { tag: `الإبداع`, h4: `التوجيه الإبداعي`, p: `وضع المفهوم والسيناريو لمحتوى التواصل الاجتماعي بالعامية السعودية، والفيديوهات القصيرة والإعلانات الإبداعية، كتابةً وتصويرًا ومونتاجًا داخليًا.` },
@@ -1401,7 +1398,7 @@ div.project-row:hover { transform: none; border-color: var(--line); }
         subOrg: `<b>Dalex Trading LLC</b> &middot; شركة تابعة &middot; شركة تجارة إضاءة ومعدات كهربائية`,
         subList: `<li>طوّرت وصنت مواقع الشركات التابعة، مع التركيز على تحسين محركات البحث والمحتوى.</li><li>أدرت حسابات التواصل الاجتماعي، وأنتجت المحتوى، وشغّلت حملات تسويق عبر البريد الإلكتروني، وقدمت الدعم التقني للفريق الداخلي.</li>`
       },
-      projects: { h2: `المشاريع التي عملت عليها`, lede: `أربعة عشر مشروعًا وعلامة تجارية عبر السعودية والإمارات وقطر والهند &mdash; تشمل التوجيه الإبداعي واستراتيجية المحتوى وتحسين محركات البحث وبناء المواقع والتجارة الإلكترونية. وخُلّة نشطة حاليًا وفي مرحلة الافتتاح التجريبي.` },
+      projects: { h2: `المشاريع التي عملت عليها`, lede: `13 علامة تجارية وموقعًا إلكترونيًا أنجزتها ضمن وظائف داخل الشركات ولدى وكالات، في السعودية والإمارات وقطر والهند &mdash; تشمل التوجيه الإبداعي واستراتيجية المحتوى وتحسين محركات البحث وبناء المواقع والتجارة الإلكترونية. وخُلّة نشطة حاليًا وفي مرحلة الافتتاح التجريبي.` },
       current: {
         badge: `حاليًا &middot; مرحلة الافتتاح التجريبي`,
         h4: `خُلّة`,
@@ -1476,7 +1473,7 @@ div.project-row:hover { transform: none; border-color: var(--line); }
         chips: `<span class="chip">تصميم مطبوعات</span><span class="chip">تطوير مواقع</span><span class="chip">تحسين محركات البحث</span><span class="chip">تواصل اجتماعي</span><span class="chip">تسويق عبر البريد</span><span class="chip">دعم تقني</span>`,
         note: `انتهى التعاون في سبتمبر 2023، وتُدار المواقع من قِبل جهة أخرى منذ ذلك الحين، لذا قد تختلف عمّا سلّمته.`
       },
-      market: { ksa: `السعودية`, uae: `الإمارات`, qatar: `قطر`, india: `الهند` },
+      market: { ksa: `السعودية <span class="market-via">&middot; عبر مجموعة هشام آل بلوشي القابضة</span>`, uae: `الإمارات <span class="market-via">&middot; عبر Falcon Konnect &amp; Pace Media</span>`, qatar: `قطر <span class="market-via">&middot; عبر Delwan Qatar وFalcon Konnect</span>`, india: `الهند <span class="market-via">&middot; عبر Falcon Konnect &amp; Pace Media</span>` },
       tag: { seo: `تحسين محركات البحث`, web: `تطوير مواقع`, ecommerce: `تجارة إلكترونية`, ads: `إعلانات`, socialmedia: `تواصل اجتماعي`, content: `محتوى`, webdev: `تطوير مواقع`, socialmediamgmt: `إدارة تواصل اجتماعي` },
       own: {
         title: `التوجيه الإبداعي &middot; مشروع شخصي`,
