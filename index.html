@@ -496,6 +496,9 @@ section { padding-top: clamp(3rem, 7vw, 5rem); padding-bottom: clamp(3rem, 7vw, 
 .tl-item ul { margin: 1rem 0 0; padding-left: 1.1rem; color: var(--ink-soft); }
 .tl-item li { margin-bottom: 0.55rem; }
 .tl-item li::marker { color: var(--accent); }
+.tl-sub { margin-top: 1.1rem; margin-left: 1.1rem; padding-left: 1rem; border-left: 2px solid var(--line); }
+.tl-sub .tl-org { margin-top: 0; }
+.tl-sub ul { margin-top: 0.6rem; }
 
 /* projects */
 .market-group { margin-bottom: 2.25rem; }
@@ -708,6 +711,7 @@ div.project-row:hover { transform: none; border-color: var(--line); }
 [dir="rtl"] .tl-item { border-left: none; border-right: 1px solid var(--line); padding-left: 0; padding-right: 2.1rem; }
 [dir="rtl"] .tl-item::before { left: auto; right: -0.375rem; }
 [dir="rtl"] .tl-item ul { padding-left: 0; padding-right: 1.1rem; }
+[dir="rtl"] .tl-sub { margin-left: 0; margin-right: 1.1rem; padding-left: 0; padding-right: 1rem; border-left: none; border-right: 2px solid var(--line); }
 [dir="rtl"] .current-grid ul { padding-left: 0; padding-right: 1.1rem; }
 [dir="rtl"] .flow-step:not(:last-child) { border-right: none; border-left: 1px solid var(--line); }
 [dir="rtl"] .flow-step:not(:last-child)::after { right: auto; left: -0.7rem; transform: scaleX(-1); }
@@ -872,11 +876,19 @@ div.project-row:hover { transform: none; border-color: var(--line); }
         <div class="tl-item reveal">
           <div class="tl-when" data-i18n="exp3.when">Sep 2022 &ndash; Sep 2023</div>
           <h3 data-i18n="exp3.h3">Digital Marketing Executive</h3>
-          <p class="tl-org" data-i18n="exp3.org"><b>Dalex Trading LLC</b> &middot; Doha, Qatar &middot; Lighting &amp; electrical trading company</p>
+          <p class="tl-org" data-i18n="exp3.org"><b>Delwan Qatar</b> &middot; Doha, Qatar &middot; Parent company</p>
           <ul data-i18n="exp3.list">
-            <li>Developed and maintained websites for subsidiary companies, focusing on SEO and content.</li>
-            <li>Managed social media accounts, created content, ran email marketing campaigns, and provided IT support to the internal team.</li>
+            <li>Designed marketing materials &mdash; brochures, pamphlets and other print collateral &mdash; in line with the brand guidelines.</li>
+            <li>Built and managed the company website.</li>
+            <li>Ran the company's social media presence.</li>
           </ul>
+          <div class="tl-sub">
+            <p class="tl-org" data-i18n="exp3.subOrg"><b>Dalex Trading LLC</b> &middot; Subsidiary &middot; Lighting &amp; electrical trading company</p>
+            <ul data-i18n="exp3.subList">
+              <li>Developed and maintained websites for subsidiary companies, focusing on SEO and content.</li>
+              <li>Managed social media accounts, created content, ran email marketing campaigns, and provided IT support to the internal team.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -1229,8 +1241,10 @@ div.project-row:hover { transform: none; border-color: var(--line); }
       },
       exp3: {
         when: `Sep 2022 &ndash; Sep 2023`, h3: `Digital Marketing Executive`,
-        org: `<b>Dalex Trading LLC</b> &middot; Doha, Qatar &middot; Lighting &amp; electrical trading company`,
-        list: `<li>Developed and maintained websites for subsidiary companies, focusing on SEO and content.</li><li>Managed social media accounts, created content, ran email marketing campaigns, and provided IT support to the internal team.</li>`
+        org: `<b>Delwan Qatar</b> &middot; Doha, Qatar &middot; Parent company`,
+        list: `<li>Designed marketing materials &mdash; brochures, pamphlets and other print collateral &mdash; in line with the brand guidelines.</li><li>Built and managed the company website.</li><li>Ran the company's social media presence.</li>`,
+        subOrg: `<b>Dalex Trading LLC</b> &middot; Subsidiary &middot; Lighting &amp; electrical trading company`,
+        subList: `<li>Developed and maintained websites for subsidiary companies, focusing on SEO and content.</li><li>Managed social media accounts, created content, ran email marketing campaigns, and provided IT support to the internal team.</li>`
       },
       projects: { h2: `Projects worked on`, lede: `Twelve brand and client properties across Saudi Arabia, the UAE, Qatar and India &mdash; spanning creative direction, content strategy, SEO, web builds and ecommerce. Khulla is live right now, in its soft-opening phase.` },
       current: {
@@ -1368,8 +1382,10 @@ div.project-row:hover { transform: none; border-color: var(--line); }
       },
       exp3: {
         when: `سبتمبر 2022 &ndash; سبتمبر 2023`, h3: `تنفيذي تسويق رقمي`,
-        org: `<b>Dalex Trading LLC</b> &middot; الدوحة، قطر &middot; شركة تجارة إضاءة ومعدات كهربائية`,
-        list: `<li>طوّرت وصنت مواقع الشركات التابعة، مع التركيز على تحسين محركات البحث والمحتوى.</li><li>أدرت حسابات التواصل الاجتماعي، وأنتجت المحتوى، وشغّلت حملات تسويق عبر البريد الإلكتروني، وقدمت الدعم التقني للفريق الداخلي.</li>`
+        org: `<b>Delwan Qatar</b> &middot; الدوحة، قطر &middot; الشركة الأم`,
+        list: `<li>صمّمت المواد التسويقية &mdash; البروشورات والمطويات وغيرها من المطبوعات &mdash; وفق الهوية البصرية للعلامة.</li><li>أنشأت الموقع الإلكتروني للشركة وأدرته.</li><li>أدرت حضور الشركة على منصات التواصل الاجتماعي.</li>`,
+        subOrg: `<b>Dalex Trading LLC</b> &middot; شركة تابعة &middot; شركة تجارة إضاءة ومعدات كهربائية`,
+        subList: `<li>طوّرت وصنت مواقع الشركات التابعة، مع التركيز على تحسين محركات البحث والمحتوى.</li><li>أدرت حسابات التواصل الاجتماعي، وأنتجت المحتوى، وشغّلت حملات تسويق عبر البريد الإلكتروني، وقدمت الدعم التقني للفريق الداخلي.</li>`
       },
       projects: { h2: `المشاريع التي عملت عليها`, lede: `اثنا عشر مشروعًا وعلامة تجارية عبر السعودية والإمارات وقطر والهند &mdash; تشمل التوجيه الإبداعي واستراتيجية المحتوى وتحسين محركات البحث وبناء المواقع والتجارة الإلكترونية. وخُلّة نشطة حاليًا وفي مرحلة الافتتاح التجريبي.` },
       current: {
